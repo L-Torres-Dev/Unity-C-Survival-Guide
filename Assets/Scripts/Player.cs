@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    /**
+     * There are many different kinds of data types
+     * primitive data types (like int, float, and bool)
+     * 
+     * reference data types (like GameObject, Animator, Transform)
+    **/
 
-    /// <summary> What a variable needs:
-    /// 1. public of private reference
-    /// 2. data type (string, bool, float, int)
-    /// 3. name of variable
-    /// 4. optional -- a value
-    /// </summary>
+    //Primitive Data Types
+    public int score;
+    public float speed = 5.5f;
+    public bool hasKey = true;
 
-    //variable for my name
-    //variable for my age
-    //variable for my location
-    public string myName = "Luis";
-    public int myAge = 23;
-    private string location = "USA"; //I don't want the rest of the world to know my location!!
-
+    //Reference Data Types
+    public GameObject player;
+    public Animator anim;
+    public Transform myTransform;
     void Start()
     {
-        print("My name is: " + myName);
-        print("My age is: " + myAge);
+        print(myTransform);
     }
 
     // Update is called once per frame
