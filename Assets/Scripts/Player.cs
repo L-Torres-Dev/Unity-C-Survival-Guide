@@ -4,25 +4,18 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    /**
-     * There are many different kinds of data types
-     * primitive data types (like int, float, and bool)
-     * 
-     * reference data types (like GameObject, Animator, Transform)
-    **/
-
-    //Primitive Data Types
-    public int score;
-    public float speed = 5.5f;
-    public bool hasKey = true;
-
-    //Reference Data Types
-    public GameObject player;
-    public Animator anim;
-    public Transform myTransform;
+    //create a variable to store your name
+    //create a variable to store your age
+    //create a variable to store your speed
+    //create a health variable
+    //create a score variable
+    //create a speed variable
+    //variable to check if all keys were collected
+    //variable for ammo count
+    
     void Start()
     {
-        print(myTransform);
+        
     }
 
     // Update is called once per frame
