@@ -12,15 +12,23 @@ public class Player : MonoBehaviour
     //create a speed variable
     //variable to check if all keys were collected
     //variable for ammo count
-    
-    void Start()
+
+    public string myName = "Luis";
+    public int age = 23;
+    public int health = 3;
+    public int score;
+    public float speed = 5.5f;
+    public bool allKeysCollected;
+    public int ammoCount = 30;
+
+    private void Start()
     {
-        
+        print(GetData());
     }
 
-    // Update is called once per frame
-    void Update()
+    public string GetData()
     {
-        
+        return $"name: {myName} age: {age} health: {health} score: {score} " +
+            $"speed: {speed} allKeysCollected: {allKeysCollected} ammo count: {ammoCount}";
     }
 }
